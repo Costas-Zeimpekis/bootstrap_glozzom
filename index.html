@@ -81,6 +81,36 @@
           </div>
         </div>
       </div>
+      <a href="#myCarousel" data-slide="prev" class="carousel-control-prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+
+      <a href="#myCarousel" data-slide="next" class="carousel-control-next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </section>
+
+  <!--HOME ICON SECTION  -->
+  <section id="home-icons" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4 text-center">
+          <i class="fas fa-cog fa-3x mb-2"></i>
+          <h3>Turning Gears</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, veniam.</p>
+        </div>
+        <div class="col-md-4 mb-4 text-center">
+          <i class="fas fa-cloud fa-3x mb-2"></i>
+          <h3>Sending Data</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, veniam.</p>
+        </div>
+        <div class="col-md-4 mb-4 text-center">
+          <i class="fas fa-cart-plus fa-3x mb-2"></i>
+          <h3>Making Money</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, veniam.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -95,6 +125,12 @@
   <script>
     // Get the current year for the copyright
     $('#year').text(new Date().getFullYear());
+
+    // Configure Slider
+    $('.carousel').carousel({
+      interval: 6000,
+      pause: 'hover'
+    });
   </script>
 </body>
 
